@@ -1,0 +1,42 @@
+package javademos.datedemos;
+
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
+import javax.swing.text.DateFormatter;
+
+public class DateDemo {
+
+    public static void main(String[] args) {
+        dateDemo();
+    }
+static void dateDemo(){
+String day ;
+        String month;
+        String year;
+System.out.println("Enter the day: ");
+        day = System.console().readLine();
+
+        System.out.println("Enter the month: ");
+        month = System.console().readLine();
+
+        System.out.println("Enter the year: ");
+        year = System.console().readLine();
+LocalDate sampleDate=LocalDate.of(Integer.parseInt(year),Integer.parseInt(month),Integer.parseInt(day));
+    System.out.println(sampleDate);
+    for(int i=1;i<=Integer.parseInt(day);i++){
+    LocalDate dateFrom=LocalDate.of(Integer.parseInt(year),Integer.parseInt(month),i);
+
+
+    System.out.println(dateFrom+" is "+dateFrom.getDayOfWeek());
+    }
+    
+}
+}
+
+
+
+
