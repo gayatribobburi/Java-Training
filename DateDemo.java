@@ -25,7 +25,6 @@ public static void dateFormat(){
 
     System.out.println("enter the year: ");
     year=System.console().readLine();
-
     LocalDate sampleDate=LocalDate.of(Integer.parseInt(year),Integer.parseInt(month),Integer.parseInt(day));
     System.out.println(sampleDate);
     for(int i=1;i<=Integer.parseInt(day);i++){
